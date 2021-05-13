@@ -114,6 +114,7 @@ class HomeActivity : AppCompatActivity(), KodeinAware {
                         val childMidpoint: Float = (layoutManager.getDecoratedRight(child) + layoutManager.getDecoratedLeft(child)) / 2f
                         val d = d1.coerceAtMost(abs(midpoint - childMidpoint))
                         val scale = s0 + (s1 - s0) * (d - d0) / (d1 - d0)
+
                         child.scaleX = scale
                         child.scaleY = scale
                     }
